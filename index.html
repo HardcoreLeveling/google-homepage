@@ -15,17 +15,33 @@
         width: 40%;
         border: ;
     }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
     .navigation {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
     }
+    .bottom {
+        overflow: hidden;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
     li a{
+        color: black; 
+        text-decoration: none;
+        float: right;
         display: block;
         padding: 14px 16px;
         text-decoration: none;
         text-align: center;
+
     }
     li a:hover {
         text-decoration: underline;
@@ -34,11 +50,19 @@
         color: black; 
         text-decoration: none;
         float: right;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
     }
     .images {
         color: black; 
         text-decoration: none;
         float: right;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
     }
     
     .resize {
@@ -46,21 +70,84 @@
         height: 5px;
         overflow: hidden;
         float: right;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
         }
     .sign {
-        color: black; 
+        color: white; 
         text-decoration: none;
         float: right;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+        background-color:  #4285f4;
+        border: solid;
         }
     .about {
         float: left;
         color: black; 
         text-decoration: none;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
         }
     .store {
         float: left;
         color: black; 
         text-decoration: none;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .foot {
+        overflow: hidden;
+        background-color: rgb(236, 236, 236);
+        position: fixed;
+        bottom: 0;
+        width: 105%;
+    }
+    .foot a {
+        text-align: center;
+        text-decoration: none;
+        color: black; 
+        padding: 14px 16px;
+        display: block;
+    }
+    .foot a:hover {
+        text-decoration: underline;
+    }
+    .advertising {
+        float: left;
+    }
+    .business {
+        float: left;
+    }
+    .how {
+        float: left;
+    }
+    .settings {
+        float: right;
+    }
+    .terms {
+        float: right;
+    }
+    .privacy {
+        float: right;
+    }
+    .search {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        width: 30%;
+    }
+    .luckb {
+        margin-left: 5%;
     }
 </style>
 <title>
@@ -68,7 +155,7 @@
 </title>
 <div>
 <ul class="navigation">
-    <li><a href="" class="sign" >Sign in</a></li>
+    <li><button onclick="window.location.href = '';" class="sign" ><b>Sign in</b></button></li>
     <li><a href="" class="resize"><img src="https://image.shutterstock.com/image-vector/square-small-seamless-pattern-fashion-260nw-565419856.jpg" alt="Options"></a></li>
     <li><a href="" class="images">Images</a></li>
     <li><a href="" class="gmail">Gmail</a></li>
@@ -82,6 +169,16 @@
 </a>
     <input class="searchbar" maxlength="2048" tpye="text" aria-autocomplete="both" auto-capitaliz="off" spellcheck="false" title="search">
 </div>
-<Footer>
-
-</Footer>
+<div class="foot">
+    <a href="" class="settings" >Settings</a>
+    <a href="" class="terms" >Terms</a>
+    <a href="" class="privacy" >Privacy</a>
+    <a href="" class="advertising" >Advertising</a>
+    <a href="" class="business" >Business</a>
+    <a href="" class="how" >How Search works</a>
+    </ul>
+</div>
+<div class="search">
+    <button onclick="window.location.href = '';" class="searchb">Google Search</button>
+    <button onclick="window.location.href = '';" class="luckb">I'm Feeling Lucky</button>
+</div>
